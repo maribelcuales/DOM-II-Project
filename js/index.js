@@ -1,5 +1,6 @@
 // Your code goes here
 
+/*
 // Sample Code 
 function clickEventHandler(event) {
 	event.preventDefault(); 
@@ -25,7 +26,6 @@ document.body.addEventListener('click', clickEventHandler);
 document.querySelector('header').addEventListener('click', clickEventHandler, true);
 
 // A variaton of code above (launching header during capture phase) 
-/*
 document.querySelector('header').addEventListener('click', clickEventHandler, {capture: true});
 */
 
@@ -43,10 +43,12 @@ funBus.addEventListener('mouseover', (event) => {
 	}, 2500);
 }) 
 
-// click 
-const navLinks = document.querySelectorAll('a'); 
+// click event 
+const navLinks = document.querySelectorAll('.nav-link');
 
-navLinks.addEventListener('click', (event) => {
-	event.target.style.color = "orange"; 
+navLinks.forEach(element => {
+	element.addEventListener('click', (event) => {
+		event.target.style.color = 'orange'; 
+		console.log('nav link is clicked!'); 
+	})
 })
-

@@ -1,5 +1,6 @@
 // Your code goes here
 
+// Sample Code 
 function clickEventHandler(event) {
 	event.preventDefault(); 
 	console.log(event.type + '!!!!!!!!!!!!!!!!');
@@ -27,5 +28,17 @@ document.querySelector('header').addEventListener('click', clickEventHandler, tr
 /*
 document.querySelector('header').addEventListener('click', clickEventHandler, {capture: true});
 */
+
+// mouseover
+const funBus = document.querySelector('h1');
+
+funBus.addEventListener('mouseover', (event) => { 
+	event.target.style.color = "pink";
+	// reset the color after a short delay 
+	setTimeout(() => {
+		event.target.style.color = "";
+	}, 2500);
+}) 
+
 
 

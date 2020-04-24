@@ -43,5 +43,10 @@ funBus.addEventListener('mouseover', (event) => {
 	}, 2500);
 }) 
 
+// click 
+const navLinks = document.querySelectorAll('a'); 
 
+navLinks.addEventListener('click', (event) => {
+	event.target.style.color = "orange"; 
+})
 

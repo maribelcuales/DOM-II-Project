@@ -29,10 +29,13 @@ document.querySelector('header').addEventListener('click', clickEventHandler, tr
 document.querySelector('header').addEventListener('click', clickEventHandler, {capture: true});
 */
 
-// mouseover
+
+// mouseover: fired at an Element when a pointing device is used to move the cursor onto the element or one of its child elements.
+
 const funBus = document.querySelector('h1');
 
 funBus.addEventListener('mouseover', (event) => { 
+	// highlights the target 
 	event.target.style.color = "pink";
 	// reset the color after a short delay 
 	setTimeout(() => {

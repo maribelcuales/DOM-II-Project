@@ -63,5 +63,10 @@ busImg.addEventListener('mouseenter', () => {
 	console.log(event, 'scale up!');
 })
 
+// mouseleave event
+busImg.addEventListener('mouseleave', () => {
+	busImg.style.transform = "scale(1)";
+	console.log(event, 'scale down!'); 
+})
 
 

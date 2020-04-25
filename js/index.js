@@ -37,6 +37,7 @@ const funBus = document.querySelector('h1');
 funBus.addEventListener('mouseover', (event) => { 
 	// highlights the target 
 	event.target.style.color = "pink";
+	console.log(event);
 	// reset the color after a short delay 
 	setTimeout(() => {
 		event.target.style.color = "";
@@ -52,3 +53,15 @@ navLinks.forEach(element => {
 		console.log('nav link is clicked!'); 
 	})
 })
+
+// mouseenter event 
+const busImg = document.querySelector('.bus-img'); 
+
+busImg.addEventListener('mouseenter', () => {
+	busImg.style.transform = "scale(1.08)";
+	busImg.style.transition = "transform 1s";
+	console.log(event, 'scale up!');
+})
+
+
+

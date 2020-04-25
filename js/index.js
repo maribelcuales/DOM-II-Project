@@ -79,13 +79,7 @@ welcome.addEventListener('dblclick', (event) => {
 	console.log(event, 'double clicked!');
 })
 
-// wheel
-// drag / drop 
-// load 
-// focus
-// resize
-// scroll 
-// select 
+
 
 // mousedown
 const textContent = document.querySelectorAll('p');

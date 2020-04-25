@@ -37,7 +37,7 @@ const funBus = document.querySelector('h1');
 funBus.addEventListener('mouseover', (event) => { 
 	// highlights the target 
 	event.target.style.color = "pink";
-	console.log(event);
+	console.log(event, 'pink!');
 	// reset the color after a short delay 
 	setTimeout(() => {
 		event.target.style.color = "";
@@ -68,5 +68,18 @@ busImg.addEventListener('mouseleave', () => {
 	busImg.style.transform = "scale(1)";
 	console.log(event, 'scale down!'); 
 })
+
+// double click event
+const welcome = document.querySelector('.welcome');
+
+welcome.addEventListener('dblclick', (event) => {
+	welcome.style.transform = "scale(1.08)"; 
+	welcome.style.transition = "transform 1s"; 
+	welcome.style.color = "yellow";  
+	console.log(event, 'double clicked!');
+})
+
+
+
 
 

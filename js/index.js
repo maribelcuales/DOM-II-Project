@@ -137,3 +137,17 @@ textImage.forEach(elem => {
 		console.log(event, 'image turn!'); 
 	})
 })
+
+// mouseover with transform translate event handler 
+const destinationImg = document.querySelector("#destination-img"); 
+
+destinationImg.addEventListener('mouseover', () => {
+	destinationImg.style.transform = "translate(-50%)";
+	destinationImg.style.transition = "transform 1s";
+	console.log(event, 'pick your destination!'); 
+})
+
+destinationImg.addEventListener('mouseleave', (event) => {
+	destinationImg.style.transform = "translate(0%, 0%)";
+	console.log(event, 'orig destination!'); 
+});

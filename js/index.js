@@ -143,3 +143,8 @@ pickDestination.addEventListener('mouseover', (event) => {
 	console.log(event, 'pick me!')
 })
 
+// mouseleave 
+pickDestination.addEventListener('mouseleave', (event) => {
+	pickDestination.style.color = "skyblue"; 
+})
+

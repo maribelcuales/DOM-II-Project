@@ -39,10 +39,16 @@ funBus.addEventListener('mouseover', (event) => {
 	event.target.style.color = "pink";
 	console.log(event, 'pink!');
 	// reset the color after a short delay 
-	setTimeout(() => {
-		event.target.style.color = "";
-	}, 2500);
-}) 
+	//setTimeout(() => {
+	//	event.target.style.color = "";
+	//}, 2500);
+})
+
+// mouseleave
+funBus.addEventListener('mouseleave', (event) => {
+	welcome.style.color = "pink";
+	console.log(event, 'left in pink!') 
+})
 
 // click event 
 const navLinks = document.querySelectorAll('.nav-link');
@@ -99,7 +105,7 @@ titles.forEach(elem => {
 })
 
 // double click event
-const welcome = document.querySelector('.welcome');
+const welcome = document.querySelector('#welcome');
 
 welcome.addEventListener('dblclick', (event) => {
 	welcome.style.transform = "scale(1.08)"; 
@@ -107,6 +113,7 @@ welcome.addEventListener('dblclick', (event) => {
 	welcome.style.color = "yellow";  
 	console.log(event, 'double clicked!');
 })
+
 
 // click and image turn event handler for text images 
 const textImage = document.querySelectorAll('#text-image');

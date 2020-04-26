@@ -69,16 +69,6 @@ busImg.addEventListener('mouseleave', () => {
 	console.log(event, 'scale down!'); 
 })
 
-// double click event
-const welcome = document.querySelector('.welcome');
-
-welcome.addEventListener('dblclick', (event) => {
-	welcome.style.transform = "scale(1.08)"; 
-	welcome.style.transition = "transform 1s"; 
-	welcome.style.color = "yellow";  
-	console.log(event, 'double clicked!');
-})
-
 /*
 // mousedown
 const textContent = document.querySelectorAll('p');
@@ -110,3 +100,29 @@ textContent.forEach(elem => {
 })
 
 
+// event handlers for h2 
+const titles = document.querySelectorAll('h2'); 
+
+titles.forEach(elem => {
+	elem.addEventListener('mouseover', (event) => { 
+		event.target.style.color = "purple";
+		console.log(event, 'purple text!');
+		//setTimeout(() => {
+		//	event.target.style.color = "";
+		//}, 2500);
+	})
+	elem.addEventListener('mouseleave', (event) => {
+		event.target.style.color = "";
+		console.log(event, 'orig text!'); 
+	});
+})
+
+// double click event
+const welcome = document.querySelector('.welcome');
+
+welcome.addEventListener('dblclick', (event) => {
+	welcome.style.transform = "scale(1.08)"; 
+	welcome.style.transition = "transform 1s"; 
+	welcome.style.color = "yellow";  
+	console.log(event, 'double clicked!');
+})

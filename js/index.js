@@ -126,3 +126,14 @@ welcome.addEventListener('dblclick', (event) => {
 	welcome.style.color = "yellow";  
 	console.log(event, 'double clicked!');
 })
+
+// click and image turn event handler for text images 
+const textImage = document.querySelectorAll('#text-image');
+
+textImage.forEach(elem => {
+	elem.addEventListener('click', (event) => { 
+		event.target.style.transform = "rotateY(180deg)"; 
+		event.target.style.transition = "transform 1s";
+		console.log(event, 'image turn!'); 
+	})
+})

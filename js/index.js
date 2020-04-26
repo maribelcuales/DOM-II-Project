@@ -79,8 +79,7 @@ welcome.addEventListener('dblclick', (event) => {
 	console.log(event, 'double clicked!');
 })
 
-
-
+/*
 // mousedown
 const textContent = document.querySelectorAll('p');
 
@@ -98,4 +97,16 @@ textContent.forEach(element => {
 		console.log(event, 'text up!'); 
 	})
 })
+*/
+
+// double click  
+const textContent = document.querySelectorAll('p');
+
+textContent.forEach(elem => {
+	elem.addEventListener('dblclick', (event) => {
+		event.target.style.color = "green";
+		console.log(event, 'read me!')
+	})
+})
+
 

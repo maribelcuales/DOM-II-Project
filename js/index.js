@@ -69,25 +69,6 @@ busImg.addEventListener('mouseleave', () => {
 	console.log(event, 'scale down!'); 
 })
 
-/*
-// mousedown
-const textContent = document.querySelectorAll('p');
-
-textContent.forEach(element => {
-	element.addEventListener('mouseDown', (event) => {
-		event.target.style.color = "green";
-		console.log(event, 'text down!'); 
-	})
-})
-
-// mouseUp
-textContent.forEach(element => {
-	element.addEventListener('mouseUp', (event) => {
-		event.target.style.color = "purple";
-		console.log(event, 'text up!'); 
-	})
-})
-*/
 
 // double click  
 const textContent = document.querySelectorAll('p');

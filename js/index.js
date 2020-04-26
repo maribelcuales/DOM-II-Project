@@ -132,3 +132,14 @@ destinationImg.addEventListener('mouseleave', (event) => {
 	destinationImg.style.transform = "translate(0%, 0%)";
 	console.log(event, 'orig destination!'); 
 });
+
+// mouseover with scale transformation
+const pickDestination = document.querySelector("#pick-destination");
+
+pickDestination.addEventListener('mouseover', (event) => { 
+	pickDestination.style.transform = "scale(1.3)";
+	pickDestination.style.transition = "transform 1s"; 
+	pickDestination.style.color = "skyblue";
+	console.log(event, 'pick me!')
+})
+

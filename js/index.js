@@ -185,3 +185,10 @@ navLinks.forEach(elem => {
 	})
 })
 
+// stopPropagation()
+document.querySelector('.content-pick p').addEventListener('click', event => {
+	// we are going to sabotage bubbling
+	event.stopImmediatePropagation(); 
+	console.log(event, 'Stop propagation!!!')
+})
+

@@ -163,6 +163,20 @@ destination.addEventListener('click', () => {
 	destination.style.backgroundColor = 'lavender'; 
 })
 
+
+// mouseover 
+const contentDestination = document.querySelectorAll(".destination ");
+
+contentDestination.forEach(elem => {
+	elem.addEventListener('click', (event) => {
+		event.target.style.color = "#E9967A";
+		event.target.style.transform = "rotateY(360deg)";
+		event.target.style.transition = "transform 2s";
+		console.log(event, 'pick me!');
+	})
+})
+
+
 // preventDefault(): 
 navLinks.forEach(elem => {
 	elem.addEventListener('click', (event) => {

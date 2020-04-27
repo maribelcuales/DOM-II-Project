@@ -155,6 +155,13 @@ pickDestination.addEventListener('mouseleave', (event) => {
 	pickDestination.style.color = "skyblue"; 
 })
 
+// click 
+
+const destination = document.querySelector(".content-destination")
+
+destination.addEventListener('click', () => {
+	destination.style.backgroundColor = 'lavender'; 
+})
 
 // preventDefault()
 

@@ -46,8 +46,8 @@ funBus.addEventListener('mouseover', (event) => {
 
 // mouseleave
 funBus.addEventListener('mouseleave', (event) => {
-	welcome.style.color = "pink";
-	console.log(event, 'left in pink!') 
+	funBus.style.color = "black";
+	console.log(event, 'back to black'); 
 })
 
 // click event 
@@ -154,4 +154,7 @@ pickDestination.addEventListener('mouseover', (event) => {
 pickDestination.addEventListener('mouseleave', (event) => {
 	pickDestination.style.color = "skyblue"; 
 })
+
+
+// preventDefault()
 

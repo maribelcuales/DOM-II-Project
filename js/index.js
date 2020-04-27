@@ -163,5 +163,11 @@ destination.addEventListener('click', () => {
 	destination.style.backgroundColor = 'lavender'; 
 })
 
-// preventDefault()
+// preventDefault(): 
+navLinks.forEach(elem => {
+	elem.addEventListener('click', (event) => {
+		event.preventDefault();
+		console.log(event, "don't refresh!"); 
+	})
+})
 
